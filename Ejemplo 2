@@ -1,0 +1,43 @@
+/* Ingresa 2 dos datos reales correspondientes a notas de examenes aprobados, calcula el promedio y determina
+la condicion de "Destacado" o "Bueno".*/
+
+#include<stdio.h>
+
+int main()
+{
+float nota1, nota2, promedio;
+
+printf("Ingrese la nota correspondiente al primer parcial: \n");
+
+scanf("%.2f",&nota1);
+
+printf("Ingrese la nota correspondiente al segundo parcial: \n");
+
+scanf("%.2f",&nota2);
+
+promedio = (nota1 + nota2)/2;
+
+printf("El promedio de notas es: %.2f \n",promedio);
+
+if(promedio >= 8)
+{
+printf("Aprobado");
+}
+else
+{
+printf("Insuficiente");
+}
+
+return 0;
+}
+
+/*Resultado o Salida
+Ingreso:
+nota correspondiente al primer parcial 5
+nota correspondiente al segundo parcial 3
+Calculo:
+(5 + 3) = 8/2 = 4
+Slida: 
+El promedio de notas es: 4
+Insuficiente
+*/
