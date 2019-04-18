@@ -1,0 +1,32 @@
+ Ejemplo 1 - Guia 1:
+ 
+ /*Se ingresa por teclado 2 notas de examenes aprobados(con decimales) de un  alumno, calcular y mostrar su promedio.*/
+ int main()
+ {
+ 
+ float nota1, nota2, promedio;
+ 
+ printf("Ingrese la nota correspondiente al primer parcial:\n");
+ 
+ scanf("%.2f",&nota1);
+ 
+ printf("Ingrese la nota correspondiente al segundo parcial:\n");
+ 
+ scanf("%.2f",&nota2);
+ 
+ promedio = (nota1 + nota2)/2;
+ 
+ printf("El promedio de notas es: %.2f",promedio);
+ 
+ return 0;
+ }
+ 
+ /*Resultado o output:
+ Ingreso:
+ nota correspondiente al primer parcial 1
+ nota correspondiente al segundo parcial 9
+ Calculo:
+ (1 + 9) = 10/2 = 5.00
+ Salida:
+ El promedio de notas es: 5.00
+ */
