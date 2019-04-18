@@ -1,0 +1,35 @@
+/*Ingresa la cantidad de alumnos aprobados y el total de alumnos, y el retorna el porcentaje de aprobados.*/
+
+#include<stdio.h>
+
+int main()
+{
+int cantAprobados, totalAlumnos;
+
+float porcAprobados;
+
+printf("Ingrea la cantidad de alumnos aprobados: \n");
+
+scanf("%d",&cantAprobados);
+
+printf("Ingresa la cantidad total de alumnos: \n");
+
+scanf("%d",&totalAlumnos);
+
+porcAprobados = cantAprobados * 100 / totalAprobados;
+
+printf("El porcentaje de aprobados es: %.2f \n",porcAprobados);
+
+return 0;
+
+/*Salida
+Ingreso:
+cantidad de alumnos aprobados 20
+cantidad total de alumnos 65
+Calculo:
+20 * 100 / 65 = 30.77
+Salida:
+El porcentaje de aprobados es: 30.77
+*/
+
+}
