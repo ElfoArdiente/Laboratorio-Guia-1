@@ -1,0 +1,38 @@
+ /*Ingresa valores correspondientes a horas, minutos y segundos y convierte todo a segundos.*/
+ 
+ #include<stdio.h>
+ 
+ int main()
+ {
+ int horas, minutos, segundos, totalSegundos;
+ 
+ printf("Ingrese horas: \n");
+ 
+ scanf("%d",&horas);
+ 
+ printf("Ingrese minutos: \n");
+ 
+ scanf("%d",&minutos);
+ 
+ printf("Ingrese segundos: \n");
+ 
+ scanf("%d",&segundos);
+ 
+ totalSegundos = (horas * 3600) + (minutos * 60) + segundos;
+ 
+ printf("El total de segundos es: %d\n",totalSegundos);
+ 
+ return 0;
+ 
+ /*Resultado o Salida
+ Ingreso:
+ ingrese horas 6
+ Igrese minutos 33
+ Ingrese segundos 47
+ Calculo:
+ (6 * 3600) + (33 * 60) + 47 = 23627
+ Salida:
+ El total de segundos es: 23627
+ */
+ 
+ }
